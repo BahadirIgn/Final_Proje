@@ -35,5 +35,5 @@ class Calisan(Insan):
             return self.__maas
 
     def __str__(self):
-        return f"Ad: {self.get_ad()}\nSoyad: {self.get_soyad()}\nYaş: {self.get_yas()}\nCinsiyet: {self.get_cinsiyet()}\nUyruk: {self.get_uyruk()}\nSektör: {self.__sektor}\nTecrübe: {self.__tecrube} ay\nYeni Maaş: {self.zam_hakki()} TL"
+        return f" Ad: {self.get_ad()}\n Soyad: {self.get_soyad()}\n Yaş: {self.get_yas()}\n Cinsiyet: {self.get_cinsiyet()}\n Uyruk: {self.get_uyruk()}\n Sektör: {self.__sektor}\n Tecrübe: {self.__tecrube} ay\n Yeni Maaş: {self.zam_hakki()} TL"
 
