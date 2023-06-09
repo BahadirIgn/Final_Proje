@@ -44,4 +44,4 @@ class Insan:
         self.__uyruk = uyruk
 
     def __str__(self):
-        return f"Ad: {self.__ad}\nSoyad: {self.__soyad}\nYaş: {self.__yas}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}"
+        return f"Ad: {self.__ad}\n Soyad: {self.__soyad}\n Yaş: {self.__yas}\n Cinsiyet: {self.__cinsiyet}\n Uyruk: {self.__uyruk}"
