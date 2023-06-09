@@ -1,0 +1,88 @@
+1-)Başla
+2-)"pandas" kütüphanesini "pd" olarak yükle
+3-)"Insan"dan "Insan"ı ekle
+4-)"Issiz"den "Issiz"i ekle
+5-)"Calisan"dan "Calisan"ı ekle
+6-)"MaviYaka"dan "MaviYaka"yı ekle
+7-)"BeyazYaka"dan "BeyazYaka"yı ekle
+8-)"insan1" değişkenine "Insan("123456789", "Ali", "Yılmaz", 25, "Erkek", "Türk")"nin değerini ata
+9-)"insan2" değişkenine "Insan("987654321", "Ayşe", "Demir", 30, "Kadın", "Türk"nin değerini ata
+10-)Ekrana "İnsan Nesnesi 1:" yaz
+11-)Ekrana "insan1.__str__()"in değerini yaz
+12-)Ekrana ""İnsan Nesnesi 2:" yaz
+13-)Ekrana "insan2.__str__()"ın değerini yaz
+14-)Ekrana "----------------------------------------" yaz
+15-)"issiz1" değişkenine "Issiz("1111111111", "Ali", "Can", 35, "Erkek", "Türk", mavi_yaka_tecrube=3, beyaz_yaka_tecrube=1))"ın değerini ata
+16-)"issiz2" değişkenine "Issiz("2222222222", "Ayşe", "Kara", 28, "Kadın", "Türk", mavi_yaka_tecrube=0, beyaz_yaka_tecrube=2))"ın değerini ata
+17-)"issiz3" değişkenine "Issiz("3333333333", "Mehmet", "Şimşek", 40, "Erkek", "Türk", mavi_yaka_tecrube=2, beyaz_yaka_tecrube=4)"ın değerini yaz
+18-)Ekrana "İşsiz Nesneleri" yaz
+19-)Ekrana "----------------------------------------" yaz
+20-)Ekrana "issiz1.__str__()"ın değerini yaz
+21-)Ekrana "----------------------------------------" yaz
+22-)Ekrana "issiz2.__str__()"ın değerini yaz
+23-)Ekrana "----------------------------------------" yaz
+24-)Ekrana "issiz3.__str__()"ın değerini yaz
+25-)Ekrana "----------------------------------------" yaz
+26-)"calisan1" değişkenine "Calisan("444444444", "Ayhan", "Aydın", 32, "Erkek", "Türk", "Bankacılık", 5, 12000)"ın değerini ata
+27-)"calisan2" değişkenine "Calisan("555555555", "Deniz", "Kılıç", 28, "Kadın", "Türk", "Bilişim", 2, 8000)"ın değerini yaz
+28-)"calisan3" değişkenine "Calisan("666666666", "Kemal", "Demir", 38, "Erkek", "Türk", "Mühendislik", 10, 18000)"ın değerini yaz
+29-)Ekrana "Çalışan Nesnesi 1:" yaz
+30-)Ekrana "calisan1.__str__()"in değerini yaz
+31-)Ekrana "Çalışan Nesnesi 2:" yaz
+32-)Ekrana "calisan2.__str__()"in değerini yaz
+33-)Ekrana "Çalışan Nesnesi 3:" yaz
+34-)Ekrana "calisan3.__str__()"in değerini yaz
+35-)Ekrana "--------------------"  yaz
+36-)"mavi_yaka1" değişkenine "MaviYaka("777777777", "Selin", "Kaya", 29, "Kadın", "Türk", "Üretim", 4, 10000, 500)"ın değerini ata 
+37-)"mavi_yaka2" değişkenine " MaviYaka("888888888", "Ahmet", "Yılmaz", 35, "Erkek", "Türk", "Lojistik", 6, 15000, 600)"ın değerini ata
+38-)"mavi_yaka3" değişkenine "MaviYaka("999999999", "Elif", "Demir", 31, "Kadın", "Türk", "Gıda", 3, 9000, 400)"ın değerini ata
+39-)Ekrana "Mavi Yaka nesnesi 1:" yaz
+40-)Ekrana "maviyaka1.__str__()"ın değerini yaz
+41-)Ekrana "Mavi Yaka nesnesi 2:" yaz
+42-)Ekrana "maviyaka2.__str__()"ın değerini yaz
+43-)Ekrana "Mavi Yaka nesnesi 3:" yaz
+44-)Ekrana "maviyaka3.__str__()"ın değerini yaz
+45-)Ekrana "----------------------------------------" yaz
+46-)"beyazyaka1" değişkenine "BeyazYaka("101010101", "Ali", "Yılmaz", 33, "Erkek", "Türk", "Muhasebe", 4, 12000, 1000)"ın değerini ata
+47-)"beyazyaka2" değişkenine "BeyazYaka("202020202", "Ayşe", "Demir", 29, "Kadın", "Türk", "Pazarlama", 7, 16000, 1200)"ın değerini ata
+48-)"beyazyaka3" değişkenine "BeyazYaka("303030303", "Mehmet", "Kara", 36, "Erkek", "Türk", "Hukuk", 5, 14000, 800)"ın değerini ata
+49-)Ekrana "Beyaz Yaka nesnesi 1:" yaz
+50-)Ekrana "beyazyaka1.__str__()"ın değerini yaz
+51-)Ekrana "Beyaz Yaka nesnesi 2:" yaz
+52-)Ekrana "beyazyaka2.__str__()"ın değerini yaz
+53-)Ekrana "Beyaz Yaka nesnesi 3:" yaz
+54-)Ekrana "beyazyaka3.__str__()"ın değerini yaz
+55-)Ekrana "----------------------------------------" yaz
+56-)"data" adında bir dataframe kur ve içeriğini bu şekilde yaz {
+    "Nesne Değeri": ["Çalışan", "Çalışan", "Çalışan", "Mavi Yaka", "Mavi Yaka", "Mavi Yaka"],
+    "TC No": [calisan1.get_tc_no(), calisan2.get_tc_no(), calisan3.get_tc_no(), maviyaka1.get_tc_no(), maviyaka2.get_tc_no(), maviyaka3.get_tc_no()],
+    "Ad": [calisan1.get_ad(), calisan2.get_ad(), calisan3.get_ad(), maviyaka1.get_ad(), maviyaka2.get_ad(), maviyaka3.get_ad()],
+    "Soyad": [calisan1.get_soyad(), calisan2.get_soyad(), calisan3.get_soyad(), maviyaka1.get_soyad(), maviyaka2.get_soyad(), maviyaka3.get_soyad()],
+    "Yaş": [calisan1.get_yas(), calisan2.get_yas(), calisan3.get_yas(), maviyaka1.get_yas(), maviyaka2.get_yas(), maviyaka3.get_yas()],
+    "Cinsiyet": [calisan1.get_cinsiyet(), calisan2.get_cinsiyet(), calisan3.get_cinsiyet(), maviyaka1.get_cinsiyet(), maviyaka2.get_cinsiyet(), maviyaka3.get_cinsiyet()],
+    "Uyruk": [calisan1.get_uyruk(), calisan2.get_uyruk(), calisan3.get_uyruk(), maviyaka1.get_uyruk(), maviyaka2.get_uyruk(), maviyaka3.get_uyruk()],
+    "Sektör": [calisan1.get_sektor(), calisan2.get_sektor(), calisan3.get_sektor(), maviyaka1.get_sektor(), maviyaka2.get_sektor(), maviyaka3.get_sektor()],
+    "Tecrübe (Yıl)": [calisan1.get_tecrube() // 12, calisan2.get_tecrube() // 12, calisan3.get_tecrube() // 12, maviyaka1.get_tecrube() // 12, maviyaka2.get_tecrube() // 12, maviyaka3.get_tecrube() // 12],
+    "Maaş": [calisan1.get_maas(), calisan2.get_maas(), calisan3.get_maas(), maviyaka1.get_maas(), maviyaka2.get_maas(), maviyaka3.get_maas()],
+    "Yıpranma Payı": [0, 0, 0, maviyaka1.get_yipranma_payi(), maviyaka2.get_yipranma_payi(), maviyaka3.get_yipranma_payi()],
+    "Teşvik Prim": [0, 0, 0, 0, 0, 0],
+    "Yeni Maaş": [calisan1.zam_hakki(), calisan2.zam_hakki(), calisan3.zam_hakki(), maviyaka1.zam_hakki(), maviyaka2.zam_hakki(), maviyaka3.zam_hakki()]
+}
+57-)"df" değişkenine "pd.Dataframe(data)" şeklinde dataframe ata
+58-)"gruplar" değişkenine "df.groupby("Nesne Değeri")"ın değerini ata
+59-)"ortalamalar" değişkenine "gruplar["Tecrübe (Yıl)", "Yeni Maaş"].mean()"ın değerini ata
+60-)Ekrana "ortalamalar"ın değerini yazdır
+61-)"ust_limit_sayisi" değişkenine "df[df["Maaş"] > 15000].shape[0]"ın değerini ata
+62-)Ekrana "Maaşı {15000} TL üzerinde olanların sayısı: {ust_limit_sayisi}" yaz
+63-)"df_sirali" değişkenine "df.sort_values("Yeni Maaş")"ın değerini ata
+64-)Ekrana "df_sirali"nın değerini yazdır
+65-)"tecrube_filtre" değişkenine "(df["Nesne Değeri"] == "Beyaz Yaka") & (df["Tecrübe (Yıl)"] > 3)"ın değerini ata
+66-)"beyaz_yakalar" değişkenine "df[tecrube_filtre]"nin değerini ata
+67-)Ekrana "neyaz_yakalar"ın değerini ata
+68-)"maas_filtre" değişkenine "df["Yeni Maaş"] > 10000"in değerini ata
+69-)"ust_limitli_nesneler" değişkenine "df[maas_filtre]"ın değerini ata
+70-)"secilen_satirlar" değişkenine "ust_limitli_nesneler.iloc[2:5, [1, -1]]"ın değerini ata
+71-)Ekrana "secilen_satirlar"ın değerini yazdır
+72-)"yeni_df" değişkenine "df[["Ad", "Soyad", "Sektör", "Yeni Maaş"]]"ın değerini ata
+73-)Ekrana "yeni_df"nin değerini yazdır
+74-)Bitir

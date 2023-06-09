@@ -1,0 +1,31 @@
+1-)Başla
+2-)"Insan" isimli sınıf tanımla
+3-)"def __init__(self, tc_no, ad, soyad, yaş, cinsiyet, uyruk)" fonksiyonu oluştur
+4-)"self.__tc_no, self.__ad, self.__soyad, self.__yaş, self.__cinsiyet, self.__uyruk" değişkenlerini "tc_no, ad, soyad, yaş, cinsiyet, uyruk"a eşitle
+5-)"get_tc_no(self)" fonksiyonu oluştur
+ 5.1-)"self.__tc_no" değerini geri gönder
+6-)"set_tc_no(self, tc_no)" fonksiyonu oluştur
+ 6.1-)"self.__tc_no" değişkenine "tc_no"nun değerini ata
+7-)"get_ad(self)" fonksiyonu oluştur
+ 7.1-)"self.__ad" değerini geri gönder
+8-)"set_ad(self, ad)" fonksiyonu oluştur
+ 8.1-)"self.__ad" değişkenine "ad"ın değerini ata 
+9-)"get_soyad(self)" fonksiyonu oluştur
+ 9.1-)"self.__soyad" değerini geri gönder
+10-)"set_soyad(self, soyad)" fonksiyonu oluştur
+ 10.1-)"self.__soyad" değişkenine "soyad"ın değerini ata
+11-)"get_yaş(self)" fonksiyonu oluştur
+ 11.1-)"self.__yaş" fonksiyonunu geri gönder
+12-)"set_yaş(self, yaş)" fonksiyonu oluştur
+ 12.1-)"self.__yaş" değişkenine "yaş"ın değerini ata
+13-)"get_cinsiyet(self)" adlı fonksiyon oluştur
+ 13.1-)"self.__cinsiyet" değerini geri gönder
+14-)"set_cinsiyet(self, cinsiyet)" fonksiyonu oluştur
+ 14.1-)"self.__cinsiyet" değişkenine "cinsiyet"in değerini ata
+15-)"get_uyruk(self)" fonksiyonu oluştur
+ 15.1-)"self.__uyruk" değerini geri gönder
+16-)"set_uyruk(self, uyruk)" fonksiyonu oluştur
+ 16.1-)"self.__uyruk" değişkenine "uyruk" değerini ata
+17-)"__str__(self)" fonksiyonu oluştur
+ 17.1-)""TC No: {self.__tc_no}\nAd: {self.__ad}\nSoyad: {self.__soyad}\nYaş: {self.__yaş}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}"u geri gönder
+18-)Bitir

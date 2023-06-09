@@ -1,0 +1,24 @@
+1-)Başla
+ 1.1-)"BeyazYaka"dan "BeyazYaka"yı indir
+2-)"BeyazYaka" adında class oluştur
+3-)"__init__(self, tc_no, ad, soyad, yaş, cinsiyet, uyruk, sektor, tecrube, maas, tesvik_primi)" fonksiyonu oluştur
+ 3.1-)super().__init__(tc_no, ad, soyad, yaş, cinsiyet, uyruk, sektor, tecrube, maas)'ı alt-üst sınıf karıştırmamak için yazdır
+ 3.2-)"self.__tesvik_primi" değişkenine "tesvik_primi" değerini ata
+4-)"get_tesvik_primi(self)" fonksiyonu oluştur
+ 4.1-)"self.__tesvik_primi" değişkenini geri gönder
+5-)"set_tesvik_primi(self, tesvik_primi)" fonksiyonu oluştur
+ 5.1-)"self.__tesvik_primi" değişkenine "tesvik_primi"nin değerini ata
+6-)"zam_hakki(self)" fonksiyonu oluştur
+ 6.1-)Eğer "self.get_tecrube() < 2" ise:
+  6.1.1-)"self.__tesvik_primi"nin değerini geri gönder
+ 6.2-)Eğer "self.get_tecrube() >= 2 and self.get_tecrube() <= 4 and self.get_maas() < 15000" ise:
+  6.2.1-)"(self.get_maas() * self.get_tecrube() / 100) * 5 + self.__tesvik_primi" değerini geri gönder
+ 6.3-)Eğer "self.get_tecrube() > 4 ve self.get_maas() < 25000" ise:
+  6.3.1-)"(self.get_maas() * self.get_tecrube() / 100) * 4 + self.__tesvik_primi"nin değerini geri gönder
+ 6.4-)Eğer "tecrube >= 24" ve "tecrube < 48" ve "maas < 15000" ise:
+  6.4.1-)"(maas * tecrube / 100) * 5 + self.__tesvik_primi" dğerini geri gönder
+ 6.5-)Değil ise:
+  6.5.1-)"self.get_maas()"ın değerini geri gönder
+7-)" __str__(self)" fonksiyonu oluştur
+ 7.1-)""Ad: {self.get_ad()}\nSoyad: {self.get_soyad()}\nYaş: {self.get_yas()}\nCinsiyet: {self.get_cinsiyet()}\nUyruk: {self.get_uyruk()}\nSektör: {self.get_sektor()}\nTecrübe: {self.get_tecrube()} ay\nYeni Maaş: {self.zam_hakki()} TL"yi değerini geri gönder
+8-)Bitir

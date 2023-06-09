@@ -1,0 +1,27 @@
+1-)Başla
+ 1.1-)"Insan" dan "Insan"'ı indir
+2-)"Issiz" isimli "class" oluştur
+3-)"def __init__(self, tc_no, ad, soyad, yaş, cinsiyet, uyruk, mavi_yaka_tecrube=0, beyaz_yaka_tecrube=0)" fonksiyonu oluştur
+ 3.1-)"self.__mavi_yaka_tecrube" değişkenine "mavi_yaka_tecrube"in değerini ata
+ 3.2-)"self.__beyaz_yaka_tecrube" değişkenine "beyaz_yaka_tecrube"yi ata
+4-)"get_mavi_yaka_tecrube(self)" fonksiyonu oluştur
+ 4.1-)"self.__mavi_yaka_tecrube" değerini geri gönder
+5-)"set_mavi_yaka_tecrube(self, mavi_yaka_tecrube)" değişkeni oluştur
+ 5.1-)"self.__mavi_yaka_tecrube" değişkenine "mavi_yaka_tecrube"in değerini ata
+6-)"get_beyaz_yaka_tecrube(self)" fonksiyonu oluştur
+ 6.1-)"self.__beyaz_yaka_tecrube" değerini geri gönder
+7-)"set_beyaz_yaka_tecrube(self, beyaz_yaka_tecrube)" fonksiyonu oluştur
+ 7.1-)"self.__beyaz_yaka_tecrube" değişkenine "beyaz_yaka_tecrube"nin değerini ata
+8-)"statu_bul(self)" fonksiyonu oluştur 
+ 8.1-)"mavi_yaka_etkisi" değişkenine 0.2 değerini ata
+ 8.2-)"beyaz_yaka_etkisi" değişkenine 0.35 değerini ata
+ 8.3-)"mavi_yaka_puan" değişkenine "self.__mavi_yaka_tecrube * mavi_yaka_etkisi"nin değerini ata
+ 8.4-)"beyaz_yaka_puan" değişkenine "self.__beyaz_yaka_tecrube * beyaz_yaka_etkisi" değerini ata
+ 8.5-)Eğer "mavi_yaka_puan > beyaz_yaka_puan" ise:
+  8.5.1-)"Mavi Yaka" değerini geri gönder
+ 8.6-)Eğer "beyaz_yaka_puan > mavi_yaka_puan" ise:
+  8.6.1-)"Beyaz Yaka" değerini geri gönder
+ 8.7-)Değilse:
+  8.7.1-)"Eşit puan, statü belirlenemiyor" değerini geri gönder
+ 8.8-)"__str__(self)" donksiyonu oluştur
+  8.8.1-)"Ad: {self.get_ad()}\nSoyad: {self.get_soyad()}\nYaş: {self.get_yas()}\nCinsiyet: {self.get_cinsiyet()}\nUyruk: {self.get_uyruk()}\nEn Uygun Statü: {self.statu_bul()}" değerini geri gönder

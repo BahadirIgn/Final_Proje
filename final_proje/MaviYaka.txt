@@ -1,0 +1,22 @@
+1-)Başla
+ 1.1-)"Calısan"dan "Calisan"ı indir
+2-)"MaviYaka" adında class oluştur
+3-)"__init__(self, tc_no, ad, soyad, yaş, cinsiyet, uyruk, sektor, tecrube, maas, yipranma_payi)" adlı fonksiyon oluştur
+ 3.1-)Class'lar arasında karışıklık çıkmaması için "super().__init__(tc_no, ad, soyad, yaş, cinsiyet, uyruk, sektor, tecrube, maas)" yaz
+ 3.2-)"self.__yipranma_payi" değişkenine "yipranma_payi" değerini ata
+4-)"get_yipranma_payi(self)" adlı fonksiyon oluştur
+ 4.1-)"self.__yipranma_payi"nun değerini geri gönder
+5-)"set_yipranma_payi(self, yipranma_payi)" adlı fonksiyon oluştur
+ 5.1-)"self.__yipranma_payi" adlı değişkene "yipranma_payi"nın değerini ata
+6-)"zam_hakki(self)" adlı fonksiyon oluştur
+ 6.1-)Eğer "self.get_tecrube() < 2" ise:
+  6.1.1-)"self.get_maas() + (self.__yipranma_payi * 10)"ın değerini geri gönder
+ 6.2-)Eğer "self.get_tecrube() >= 2 ve self.get_tecrube() <= 4 ve self.get_maas() < 15000" ise:
+  6.2.1-)"(self.get_maas() * self.get_tecrube() / 100) + (self.__yipranma_payi * 10)" değerini geri gönder
+ 6.3-)Eğer "self.get_tecrube() > 4 ve self.get_maas() < 25000" ise:
+  6.3.1-)"(self.get_maas() * self.get_tecrube() / 300) + (self.__yipranma_payi * 10)"ın değerini geri gönder
+ 6.4-)Değil ise:
+  6.4.1-)"self.get_maas()"ın değerini geri gönder
+7-)"__str__(self)" adlı fonksiyon oluştur
+ 7.1-)"Ad: {self.get_ad()}\nSoyad: {self.get_soyad()}\nYaş: {self.get_yas()}\nCinsiyet: {self.get_cinsiyet()}\nUyruk: {self.get_uyruk()}\nSektör: {self.get_sektor()}\nTecrübe: {self.get_tecrube()} ay\nYeni Maaş: {self.zam_hakki()} TL"ın değerini geri gönder
+8-)Bitir

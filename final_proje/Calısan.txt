@@ -1,0 +1,32 @@
+1-)Başla
+ 1.1-)"Insan"dan "Insan"ı ekle
+2-)"Calısan" isimli class oluştur
+3-)"__init__(self, tc_no, ad, soyad, yaş, cinsiyet, uyruk, sektor, tecrube, maas)" isimli fonksiyon oluştur
+ 3.1-)"super().__init__(tc_no, ad, soyad, yaş, cinsiyet, uyruk)" yaz
+ 3.2-)"self.__sektor" değişkenine "sektor"ün değerini ata
+ 3.3-)"self.__tecrube" değişkenine "tecrube"nin değerini ata
+ 3.4-)"self.__maas" değişkenine "maas" değerini ata
+4-)"get_sektor(self)" fonksiyonu oluştur
+ 4.1-)"self.__sektor" değişkenini geri gönder
+5-)"set_sektor(self, sektor)" fonksiyonu oluştur
+ 5.1-)"self.__sektor" değişkenine "self.kontrol_sektor(sektor)"ün değerini ata
+6-)"get_tecrube(self)" fonksiyonu oluştur
+ 6.1-)"self.__tecrube" değişkenini geri gönder
+7-)"set_tecrube(self, tecrube)" fonksiyonu oluştur
+ 7.1-)"self.__tecrube" değişkenine "tecrube"nin değerini ata
+8-)"get_maas(self)" fonksiyonu oluştur
+ 8.1-)"self.__maas" değişkenini geri gönder
+9-)"set_maas(self, maas)" fonksiyonu oluştur
+ 9.1-)"self.__maas" değişkenine "maas"ın değerini ata
+10-)"zam_hakki(self)" fonksiyonu oluştur
+ 10.1-)Eğer "self.__tecrube < 2" ise:
+  10.1.1-)"self.__maas"ı geri gönder
+ 10.2-)Eğer "self.__tecrube >= 2 ve self.__tecrube <= 4 ve self.__maas < 15000" ise:
+  10.2.1-)"self.__maas + (self.__maas * self.__tecrube / 100)" değerini geri gönder
+ 10.3-)Eğer "self.__tecrube > 4 and self.__maas < 25000" ise:
+  10.3.1-)"self.__maas + (self.__maas * self.__tecrube / 200)"ün değerini geri gönder
+ 10.4-)Değil ise:
+  10.4.1-)"self.__maas"ı geri gönder
+11-)"__str__(self)" fonksiyonu oluştur
+ 11.1-)"Ad: {self.get_ad()}\nSoyad: {self.get_soyad()}\nYaş: {self.get_yas()}\nCinsiyet: {self.get_cinsiyet()}\nUyruk: {self.get_uyruk()}\nSektör: {self.__sektor}\nTecrübe: {self.__tecrube} ay\nYeni Maaş: {self.zam_hakki()} TL" değerini geri gönder
+12-)Bitir
